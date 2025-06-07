@@ -34,9 +34,11 @@ function renderTask(){
         let Name =Todo.name;
         let Date = Todo.date;
 
-        let html = `<p>${Name} ${Date}
-        <button onclick = "Delete(${i})">Delete</button>
-        </p>`;
+        let html = `
+        <div>${Name}</div>
+        <div>${Date}</div>
+        <button class = "delete" onclick = "Delete(${i})">Delete</button>
+        `;
 
         Tasklist += html;
 
